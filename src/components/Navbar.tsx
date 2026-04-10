@@ -3,10 +3,16 @@ import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
+  { to: "/doctors", label: "Doctors" },
+  { to: "/pricing", label: "Pricing" },
+  { to: "/faq", label: "FAQ" },
+  { to: "/gallery", label: "Gallery" },
   { to: "/appointment", label: "Book Appointment" },
   { to: "/contact", label: "Contact" },
 ];
@@ -65,7 +71,10 @@ const Navbar = () => {
               )}
             </Link>
           ))}
-          <div className="ml-4">
+          <div className="ml-2">
+            <ThemeToggle />
+          </div>
+          <div className="ml-2">
             <Button asChild size="sm" className="rounded-full px-5 shadow-md">
               <a href="tel:+1234567890">
                 <Phone className="h-3.5 w-3.5 mr-1.5" /> Call Now
@@ -106,11 +115,14 @@ const Navbar = () => {
                   {l.label}
                 </Link>
               ))}
-              <Button asChild size="sm" className="mt-3 rounded-full">
+              <div className="flex items-center gap-2 mt-3">
+                <ThemeToggle />
+                <Button asChild size="sm" className="rounded-full flex-1">
                 <a href="tel:+1234567890">
                   <Phone className="h-3.5 w-3.5 mr-1.5" /> Call Now
                 </a>
-              </Button>
+                </Button>
+              </div>
             </div>
           </motion.div>
         )}

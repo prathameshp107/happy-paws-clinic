@@ -42,7 +42,7 @@ const Index = () => (
     <section className="relative overflow-hidden min-h-[90vh] flex items-center">
       <div className="absolute inset-0">
         <img src={heroPets} alt="Premium pet clinic interior" className="w-full h-full object-cover" width={1920} height={1080} />
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent dark:from-black/60 dark:via-black/40" />
       </div>
       <div className="relative container mx-auto px-4 py-24 md:py-32">
         <div className="max-w-2xl">
