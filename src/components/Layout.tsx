@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ScrollProgress from "./ScrollProgress";
 import FloatingCTA from "./FloatingCTA";
+import WhatsAppButton from "./WhatsAppButton";
 import SmoothScroll from "./SmoothScroll";
 
 const Layout = ({ children }: { children: ReactNode }) => (
@@ -13,6 +14,7 @@ const Layout = ({ children }: { children: ReactNode }) => (
     <main className="flex-1">{children}</main>
     <Footer />
     <FloatingCTA />
+    <WhatsAppButton />
   </div>
 );
 
