@@ -1,6 +1,8 @@
-import { Phone, Mail, MapPin, Instagram, Facebook, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram, Facebook, ArrowRight, ChevronUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+
+const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
 const Footer = () => (
   <footer className="relative overflow-hidden">
@@ -85,7 +87,16 @@ const Footer = () => (
 
       <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
         <span>© 2026 fonaPetcare Clinic. All rights reserved.</span>
-        <span>Crafted with ♥ for your furry family.</span>
+        <div className="flex items-center gap-4">
+          <span>Crafted with ♥ for your furry family.</span>
+          <button
+            onClick={scrollToTop}
+            className="h-10 w-10 rounded-full glass-card flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+            aria-label="Go to top"
+          >
+            <ChevronUp className="h-4 w-4" />
+          </button>
+        </div>
       </div>
     </div>
   </footer>
