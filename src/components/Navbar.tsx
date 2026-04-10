@@ -30,15 +30,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-all duration-500 ${
+      className={`sticky top-0 z-50 transition-all duration-700 ${
         scrolled
-          ? "bg-card/90 backdrop-blur-xl shadow-sm border-b border-border"
+          ? "glass-card-strong shadow-sm"
           : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-20 px-4">
-        <Link to="/" className="flex items-center gap-2.5">
-          <div className="h-9 w-9 rounded-lg bg-primary flex items-center justify-center">
+        <Link to="/" className="flex items-center gap-2.5 group">
+          <div className="h-10 w-10 rounded-xl bg-primary flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
             <span className="text-primary-foreground font-heading font-bold text-lg">f</span>
           </div>
           <div className="flex flex-col">
@@ -50,7 +50,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-0.5">
           {navLinks.map((l) => (
             <Link
               key={l.to}
@@ -71,11 +71,11 @@ const Navbar = () => {
               )}
             </Link>
           ))}
-          <div className="ml-2">
+          <div className="ml-3">
             <ThemeToggle />
           </div>
           <div className="ml-2">
-            <Button asChild size="sm" className="rounded-full px-5 shadow-md">
+            <Button asChild size="sm" className="rounded-full px-6 shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-shadow">
               <a href="tel:+1234567890">
                 <Phone className="h-3.5 w-3.5 mr-1.5" /> Call Now
               </a>
@@ -85,7 +85,7 @@ const Navbar = () => {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden h-10 w-10 flex items-center justify-center rounded-lg bg-secondary text-foreground"
+          className="lg:hidden h-10 w-10 flex items-center justify-center rounded-xl glass-card text-foreground"
           onClick={() => setOpen(!open)}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -98,7 +98,8 @@ const Navbar = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="md:hidden overflow-hidden bg-card/95 backdrop-blur-xl border-b border-border"
+            transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:hidden overflow-hidden glass-card-strong border-b border-border"
           >
             <div className="flex flex-col gap-1 p-4">
               {navLinks.map((l) => (
@@ -117,10 +118,10 @@ const Navbar = () => {
               ))}
               <div className="flex items-center gap-2 mt-3">
                 <ThemeToggle />
-                <Button asChild size="sm" className="rounded-full flex-1">
-                <a href="tel:+1234567890">
-                  <Phone className="h-3.5 w-3.5 mr-1.5" /> Call Now
-                </a>
+                <Button asChild size="sm" className="rounded-full flex-1 shadow-lg shadow-primary/20">
+                  <a href="tel:+1234567890">
+                    <Phone className="h-3.5 w-3.5 mr-1.5" /> Call Now
+                  </a>
                 </Button>
               </div>
             </div>
