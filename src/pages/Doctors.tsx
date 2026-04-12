@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Stethoscope, HeartPulse, Award } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
-import doctor1 from "@/assets/doctor-premium.jpg";
-import doctor2 from "@/assets/doctor.jpg";
+import doctor1 from "@/assets/doctor-premium.webp";
+import doctor2 from "@/assets/doctor.webp";
 
 const doctors = [
   { name: "Dr. Ruchali Ghatage", role: "Chief Veterinarian", img: doctor1, badges: ["Surgery", "Internal Medicine"] },

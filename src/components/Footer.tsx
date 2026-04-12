@@ -1,7 +1,7 @@
 import { Phone, Mail, MapPin, Instagram, Facebook, ArrowRight, ChevronUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import logoImg from "@/assets/logo.jpeg";
+import logoImg from "@/assets/logo.webp";
 
 const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
@@ -10,7 +10,7 @@ const Footer = () => (
     <div className="absolute inset-0 bg-gradient-to-b from-background to-secondary/30" />
     <div className="relative container mx-auto px-4 pt-20 pb-8">
       {/* Newsletter CTA */}
-      <div className="glass-card-strong rounded-3xl p-10 md:p-14 mb-16 text-center">
+      {/* <div className="glass-card-strong rounded-3xl p-10 md:p-14 mb-16 text-center">
         <h3 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">Stay Connected</h3>
         <p className="text-muted-foreground mb-8 max-w-md mx-auto">Get pet care tips, special offers, and updates from faunaPetcare.</p>
         <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
@@ -23,7 +23,7 @@ const Footer = () => (
             Subscribe <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
-      </div>
+      </div> */}
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
         <div className="md:col-span-1">

@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
-import checkupImg from "@/assets/service-checkup.jpg";
-import vaccinationImg from "@/assets/service-vaccination.jpg";
-import groomingImg from "@/assets/service-grooming.jpg";
-import surgeryImg from "@/assets/service-surgery.jpg";
+import checkupImg from "@/assets/service-checkup.webp";
+import vaccinationImg from "@/assets/service-vaccination.webp";
+import groomingImg from "@/assets/service-grooming.webp";
+import surgeryImg from "@/assets/service-surgery.webp";
 
 const services = [
   {

@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import { Card } from "@/components/ui/card";
-import g1 from "@/assets/service-checkup.jpg";
-import g2 from "@/assets/service-vaccination.jpg";
-import g3 from "@/assets/service-grooming.jpg";
-import g4 from "@/assets/service-surgery.jpg";
-import hero from "@/assets/hero-pets.jpg";
-import galleryPuppy from "@/assets/gallery-puppy.jpg";
-import galleryCat from "@/assets/gallery-cat.jpg";
-import galleryGrooming from "@/assets/gallery-grooming.jpg";
-import galleryFamily from "@/assets/gallery-family.jpg";
+import g1 from "@/assets/service-checkup.webp";
+import g2 from "@/assets/service-vaccination.webp";
+import g3 from "@/assets/service-grooming.webp";
+import g4 from "@/assets/service-surgery.webp";
+import hero from "@/assets/hero-pets.webp";
+import galleryPuppy from "@/assets/gallery-puppy.webp";
+import galleryCat from "@/assets/gallery-cat.webp";
+import galleryGrooming from "@/assets/gallery-grooming.webp";
+import galleryFamily from "@/assets/gallery-family.webp";
 
 const images = [
   { src: hero, label: "Our Clinic" },

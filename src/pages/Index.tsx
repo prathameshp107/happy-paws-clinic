@@ -5,12 +5,12 @@ import { Phone, Stethoscope, Syringe, Scissors, Clock, Star, ArrowRight, HeartPu
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
-import heroPets from "@/assets/hero-premium.jpg";
-import doctorImg from "@/assets/docImage.jpeg";
-import checkupImg from "@/assets/healtcheckup.jpeg";
-import vaccinationImg from "@/assets/Vaccination.jpeg";
-import groomingImg from "@/assets/Grooming.jpeg";
-import surgeryImg from "@/assets/service-surgery.jpg";
+import heroPets from "@/assets/hero-premium.webp";
+import doctorImg from "@/assets/docImage.webp";
+import checkupImg from "@/assets/healtcheckup.webp";
+import vaccinationImg from "@/assets/Vaccination.webp";
+import groomingImg from "@/assets/Grooming.webp";
+import surgeryImg from "@/assets/service-surgery.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },

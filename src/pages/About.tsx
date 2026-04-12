@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { HeartPulse, Shield, Award, Users, Stethoscope } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
-import heroPets from "@/assets/hero-premium.jpg";
-import doctorImg from "@/assets/docImage.jpeg";
+import heroPets from "@/assets/hero-premium.webp";
+import doctorImg from "@/assets/docImage.webp";
 
 const highlights = [
   { icon: HeartPulse, title: "Compassion First", desc: "We treat every pet like family with gentle, loving care." },
