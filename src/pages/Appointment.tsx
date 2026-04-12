@@ -91,7 +91,7 @@ const Appointment = () => {
                   </div>
                   <div className="space-y-2.5">
                     <Label htmlFor="phone" className="text-foreground font-medium">Phone Number</Label>
-                    <Input id="phone" type="tel" placeholder="+1 (234) 567-890" required className="h-13 rounded-xl bg-background/50 border-border/50 focus:border-primary/50 transition-colors" />
+                    <Input id="phone" type="tel" placeholder="+91 99233 42709" required className="h-13 rounded-xl bg-background/50 border-border/50 focus:border-primary/50 transition-colors" />
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

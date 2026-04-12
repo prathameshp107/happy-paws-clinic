@@ -1,6 +1,7 @@
 import { Phone, Mail, MapPin, Instagram, Facebook, ArrowRight, ChevronUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import logoImg from "@/assets/logo.jpeg";
 
 const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
@@ -26,9 +27,9 @@ const Footer = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
         <div className="md:col-span-1">
-          <div className="flex items-center gap-2.5 mb-5">
-            <div className="h-10 w-10 rounded-xl bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-lg">f</span>
+          <div className="flex items-center gap-3 mb-5">
+            <div className="h-12 w-12 rounded-xl overflow-hidden shadow-lg">
+              <img src={logoImg} alt="faunaPetcare Logo" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
               <span className="font-heading text-lg font-bold">faunaPetcare</span>
@@ -72,16 +73,23 @@ const Footer = () => (
         <div>
           <h4 className="font-heading font-semibold mb-5 text-sm uppercase tracking-[0.15em] text-muted-foreground">Get in Touch</h4>
           <div className="flex flex-col gap-4 text-sm text-muted-foreground">
-            <a href="tel:+1234567890" className="flex items-center gap-3 hover:text-primary transition-colors duration-300">
-              <Phone className="h-4 w-4 shrink-0" /> +1 (234) 567-890
+            <a href="tel:+919923342709" className="flex items-center gap-3 hover:text-primary transition-colors duration-300">
+              <Phone className="h-4 w-4 shrink-0" /> +91 99233 42709
             </a>
             <a href="mailto:hello@faunapetcare.com" className="flex items-center gap-3 hover:text-primary transition-colors duration-300">
               <Mail className="h-4 w-4 shrink-0" /> hello@faunapetcare.com
             </a>
-            <span className="flex items-center gap-3">
-              <MapPin className="h-4 w-4 shrink-0" /> 123 Pet Street, Furry Town
-            </span>
+            <div className="flex items-start gap-3">
+              <MapPin className="h-4 w-4 mt-1 shrink-0" />
+              <span className="leading-relaxed">
+                Shop No. 7, Eraville Complex,<br />
+                Survey No. 182, Beside Tupe Corner,<br />
+                Tupe Patil Road, Behind Amanora Mall,<br />
+                Hadapsar, Pune, Maharashtra - 411028, India
+              </span>
+            </div>
           </div>
+        </div>
         </div>
       </div>
 
@@ -98,7 +106,6 @@ const Footer = () => (
           </button>
         </div>
       </div>
-    </div>
   </footer>
 );
 

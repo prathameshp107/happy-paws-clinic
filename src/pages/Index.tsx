@@ -41,10 +41,10 @@ const stats = [
 ];
 
 const testimonials = [
-  { name: "Sarah Mitchell", role: "Golden Retriever Mom", text: "faunaPetcare transformed our experience with pet healthcare. The attention to detail and genuine care is unmatched. My dog actually gets excited to visit!", rating: 5, avatar: "SM" },
-  { name: "James Kumar", role: "Cat Parent", text: "I've never seen a vet clinic this beautiful and professional. They treat every pet like royalty. The team remembered my cat's name on our second visit!", rating: 5, avatar: "JK" },
+  { name: "Mrs. Irani.", role: "Golden Retriever Mom", text: "Dr. Ruchali Ghatge has been kind & caring towards my  furries. She knows how to handle them & their various problems.", rating: 5, avatar: "IR" },
+  { name: "Mr. Tushar Kapoor", role: "dog Parent", text: "Dr. Ruchali Ghatge has been an incredible support for my pets, Enzo and Bella, right from the very beginning. She is extremely professional, knowledgeable, and genuinely caring towards animals. One thing I truly appreciate is her availability—whenever we’ve needed guidance or help, she has always been approachable and responsive. She takes the time to explain every detail clearly, whether it’s about the diagnosis, treatment, or medication, which really helps in understanding and managing my pets’ health better. I’m very grateful to have such a reliable and dedicated vet for Enzo and Bella. Highly recommended!", rating: 5, avatar: "TK" },
   { name: "Priya Desai", role: "Multi-pet Household", text: "With three dogs and two cats, finding quality care was a challenge — until faunaPetcare. Their premium approach is worth every penny. Absolute game-changer.", rating: 5, avatar: "PD" },
-  { name: "Michael Torres", role: "Puppy Parent", text: "From vaccinations to grooming, everything is handled with such professionalism. The facility feels like a five-star hotel for pets. Couldn't recommend more!", rating: 5, avatar: "MT" },
+  { name: "Kiran Kadam", role: "Puppy Parent", text: "From vaccinations to grooming, everything is handled with such professionalism. The facility feels like a five-star hotel for pets. Couldn't recommend more!", rating: 5, avatar: "KK" },
 ];
 
 const Index = () => {
