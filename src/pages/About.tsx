@@ -21,7 +21,7 @@ const About = () => (
       </div>
       <div className="relative container mx-auto px-4 py-20">
         <motion.h1 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="font-heading text-4xl md:text-6xl font-bold text-primary-foreground">
-          About fonaPetcare
+          About faunaPetcare
         </motion.h1>
         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="text-primary-foreground/70 max-w-2xl mt-4">
           Premium veterinary care designed for comfort, safety, and excellence. Our mission is to deliver human‑grade care to every furry family member.
@@ -60,7 +60,7 @@ const About = () => (
           <CardContent className="p-8 md:col-span-2">
             <h3 className="font-heading text-2xl md:text-3xl font-bold mb-3">Our Story</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Founded by passionate veterinarians, fonaPetcare set out to redefine pet healthcare by blending premium hospitality with world‑class medical standards. Today, we continue to evolve with the latest in diagnostics, surgery, and wellness.
+              Founded by passionate veterinarians, faunaPetcare set out to redefine pet healthcare by blending premium hospitality with world‑class medical standards. Today, we continue to evolve with the latest in diagnostics, surgery, and wellness.
             </p>
           </CardContent>
           <div className="hidden md:block bg-secondary/60 p-8">

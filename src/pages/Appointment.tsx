@@ -37,7 +37,7 @@ const Appointment = () => {
               <CheckCircle2 className="h-12 w-12 text-primary" />
             </div>
             <h2 className="font-heading text-5xl font-bold text-foreground mb-4">Appointment Requested!</h2>
-            <p className="text-muted-foreground mb-10 max-w-md mx-auto text-lg">We'll call you shortly to confirm your visit. Thank you for choosing fonaPetcare!</p>
+            <p className="text-muted-foreground mb-10 max-w-md mx-auto text-lg">We'll call you shortly to confirm your visit. Thank you for choosing faunaPetcare!</p>
             <Button onClick={() => setSubmitted(false)} className="rounded-full px-10 py-6 text-base">Book Another</Button>
           </motion.div>
         </div>

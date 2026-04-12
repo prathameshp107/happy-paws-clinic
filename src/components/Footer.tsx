@@ -11,7 +11,7 @@ const Footer = () => (
       {/* Newsletter CTA */}
       <div className="glass-card-strong rounded-3xl p-10 md:p-14 mb-16 text-center">
         <h3 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">Stay Connected</h3>
-        <p className="text-muted-foreground mb-8 max-w-md mx-auto">Get pet care tips, special offers, and updates from fonaPetcare.</p>
+        <p className="text-muted-foreground mb-8 max-w-md mx-auto">Get pet care tips, special offers, and updates from faunaPetcare.</p>
         <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
           <input
             type="email"
@@ -31,7 +31,7 @@ const Footer = () => (
               <span className="text-primary-foreground font-heading font-bold text-lg">f</span>
             </div>
             <div className="flex flex-col">
-              <span className="font-heading text-lg font-bold">fonaPetcare</span>
+              <span className="font-heading text-lg font-bold">faunaPetcare</span>
               <span className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground">Clinic</span>
             </div>
           </div>
@@ -75,8 +75,8 @@ const Footer = () => (
             <a href="tel:+1234567890" className="flex items-center gap-3 hover:text-primary transition-colors duration-300">
               <Phone className="h-4 w-4 shrink-0" /> +1 (234) 567-890
             </a>
-            <a href="mailto:hello@fonapetcare.com" className="flex items-center gap-3 hover:text-primary transition-colors duration-300">
-              <Mail className="h-4 w-4 shrink-0" /> hello@fonapetcare.com
+            <a href="mailto:hello@faunapetcare.com" className="flex items-center gap-3 hover:text-primary transition-colors duration-300">
+              <Mail className="h-4 w-4 shrink-0" /> hello@faunapetcare.com
             </a>
             <span className="flex items-center gap-3">
               <MapPin className="h-4 w-4 shrink-0" /> 123 Pet Street, Furry Town
@@ -86,7 +86,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
-        <span>© 2026 fonaPetcare Clinic. All rights reserved.</span>
+        <span>© 2026 faunaPetcare Clinic. All rights reserved.</span>
         <div className="flex items-center gap-4">
           <span>Crafted with ♥ for your furry family.</span>
           <button

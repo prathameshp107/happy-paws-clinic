@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 
 const contactInfo = [
   { icon: Phone, label: "Phone", value: "+1 (234) 567-890", href: "tel:+1234567890", gradient: "from-primary/15 to-primary/5" },
-  { icon: Mail, label: "Email", value: "hello@fonapetcare.com", href: "mailto:hello@fonapetcare.com", gradient: "from-accent/15 to-accent/5" },
+  { icon: Mail, label: "Email", value: "hello@faunapetcare.com", href: "mailto:hello@faunapetcare.com", gradient: "from-accent/15 to-accent/5" },
   { icon: MapPin, label: "Address", value: "123 Pet Street, Furry Town, CA 90210", gradient: "from-primary/15 to-primary/5" },
   { icon: Clock, label: "Hours", value: "Mon–Fri: 9am–8pm | Sat: 9am–5pm", gradient: "from-accent/15 to-accent/5" },
 ];
@@ -66,7 +66,7 @@ const Contact = () => (
       <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
         <Card className="border-0 overflow-hidden premium-border hover-glow card-elevated">
           <iframe
-            title="fonaPetcare Location"
+            title="faunaPetcare Location"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0977927620115!2d-122.41941568468255!3d37.77492977975892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1680000000000"
             width="100%"
             height="500"

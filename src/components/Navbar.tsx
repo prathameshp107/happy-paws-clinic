@@ -43,7 +43,7 @@ const Navbar = () => {
           </div>
           <div className="flex flex-col">
             <span className="font-heading text-lg font-bold text-foreground leading-tight tracking-tight">
-              fona<span className="text-primary">Petcare</span>
+              fauna<span className="text-primary">Petcare</span>
             </span>
             <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body">Clinic</span>
           </div>

@@ -41,9 +41,9 @@ const stats = [
 ];
 
 const testimonials = [
-  { name: "Sarah Mitchell", role: "Golden Retriever Mom", text: "fonaPetcare transformed our experience with pet healthcare. The attention to detail and genuine care is unmatched. My dog actually gets excited to visit!", rating: 5, avatar: "SM" },
+  { name: "Sarah Mitchell", role: "Golden Retriever Mom", text: "faunaPetcare transformed our experience with pet healthcare. The attention to detail and genuine care is unmatched. My dog actually gets excited to visit!", rating: 5, avatar: "SM" },
   { name: "James Kumar", role: "Cat Parent", text: "I've never seen a vet clinic this beautiful and professional. They treat every pet like royalty. The team remembered my cat's name on our second visit!", rating: 5, avatar: "JK" },
-  { name: "Priya Desai", role: "Multi-pet Household", text: "With three dogs and two cats, finding quality care was a challenge — until fonaPetcare. Their premium approach is worth every penny. Absolute game-changer.", rating: 5, avatar: "PD" },
+  { name: "Priya Desai", role: "Multi-pet Household", text: "With three dogs and two cats, finding quality care was a challenge — until faunaPetcare. Their premium approach is worth every penny. Absolute game-changer.", rating: 5, avatar: "PD" },
   { name: "Michael Torres", role: "Puppy Parent", text: "From vaccinations to grooming, everything is handled with such professionalism. The facility feels like a five-star hotel for pets. Couldn't recommend more!", rating: 5, avatar: "MT" },
 ];
 
