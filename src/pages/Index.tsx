@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 import heroPets from "@/assets/hero-premium.jpg";
-import doctorImg from "@/assets/doctor-premium.jpg";
-import checkupImg from "@/assets/service-checkup.jpg";
-import vaccinationImg from "@/assets/service-vaccination.jpg";
-import groomingImg from "@/assets/service-grooming.jpg";
+import doctorImg from "@/assets/docImage.jpeg";
+import checkupImg from "@/assets/healtcheckup.jpeg";
+import vaccinationImg from "@/assets/Vaccination.jpeg";
+import groomingImg from "@/assets/Grooming.jpeg";
 import surgeryImg from "@/assets/service-surgery.jpg";
 
 const fadeUp = {
@@ -231,7 +231,7 @@ const Index = () => {
           >
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-primary/10 via-accent/5 to-transparent rounded-[2rem] blur-2xl" />
-              <img src={doctorImg} alt="Dr. Emily Parker" loading="lazy" width={800} height={1024} className="rounded-3xl w-full max-w-md mx-auto relative z-10 shadow-2xl" />
+              <img src={doctorImg} alt="Dr. Ruchali Ghatage" loading="lazy" width={800} height={1024} className="rounded-3xl w-full max-w-md mx-auto relative z-10 shadow-2xl" />
               <div className="absolute -bottom-6 -right-6 glass-card-strong rounded-2xl p-5 z-20 max-w-[200px]">
                 <div className="flex gap-0.5 mb-1">
                   {[1,2,3,4,5].map(n => <Star key={n} className="h-3.5 w-3.5 fill-accent text-accent" />)}
@@ -250,7 +250,7 @@ const Index = () => {
           >
             <p className="text-accent text-sm font-semibold uppercase tracking-[0.2em] mb-4">Meet Our Expert</p>
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-              Dr. Emily Parker
+              Dr. Ruchali Ghatage
             </h2>
             <p className="text-muted-foreground mb-6 leading-relaxed text-lg">
               With over 15 years of experience in veterinary medicine, Dr. Parker leads our team with unmatched passion and expertise. She specializes in small animal medicine, advanced diagnostics, and surgical innovation.

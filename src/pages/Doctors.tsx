@@ -6,7 +6,7 @@ import doctor1 from "@/assets/doctor-premium.jpg";
 import doctor2 from "@/assets/doctor.jpg";
 
 const doctors = [
-  { name: "Dr. Emily Parker", role: "Chief Veterinarian", img: doctor1, badges: ["Surgery", "Internal Medicine"] },
+  { name: "Dr. Ruchali Ghatage", role: "Chief Veterinarian", img: doctor1, badges: ["Surgery", "Internal Medicine"] },
   { name: "Dr. Liam Chen", role: "Senior Vet", img: doctor2, badges: ["Dermatology", "Dentistry"] },
   { name: "Dr. Sofia Reyes", role: "Vet Surgeon", img: doctor1, badges: ["Orthopedics", "Anesthesiology"] },
 ];
