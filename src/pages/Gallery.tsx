@@ -6,13 +6,21 @@ import g2 from "@/assets/service-vaccination.webp";
 import g3 from "@/assets/service-grooming.webp";
 import g4 from "@/assets/service-surgery.webp";
 import hero from "@/assets/hero-pets.webp";
+import heroPremium from "@/assets/hero-premium.webp";
 import galleryPuppy from "@/assets/gallery-puppy.webp";
 import galleryCat from "@/assets/gallery-cat.webp";
 import galleryGrooming from "@/assets/gallery-grooming.webp";
 import galleryFamily from "@/assets/gallery-family.webp";
+import doctorPremium from "@/assets/doctor-premium.webp";
+import doctor from "@/assets/doctor.webp";
+import groomingService from "@/assets/Grooming.webp";
+import vaccinationService from "@/assets/Vaccination.webp";
+import doctorImage from "@/assets/docImage.webp";
+import healthcheckup from "@/assets/healtcheckup.webp";
 
 const images = [
   { src: hero, label: "Our Clinic" },
+  { src: heroPremium, label: "Premium Facility" },
   { src: galleryPuppy, label: "Puppy Care" },
   { src: galleryCat, label: "Cat Wellness" },
   { src: g1, label: "Health Checkup" },
@@ -21,6 +29,12 @@ const images = [
   { src: galleryFamily, label: "Happy Families" },
   { src: g3, label: "Grooming Spa" },
   { src: g4, label: "Surgical Suite" },
+  { src: doctorPremium, label: "Expert Doctors" },
+  { src: doctor, label: "Veterinary Care" },
+  { src: groomingService, label: "Professional Grooming" },
+  { src: vaccinationService, label: "Vaccination Services" },
+  { src: doctorImage, label: "Compassionate Care" },
+  { src: healthcheckup, label: "Comprehensive Checkups" },
 ];
 
 const Gallery = () => (

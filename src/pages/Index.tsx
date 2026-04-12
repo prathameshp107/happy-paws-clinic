@@ -68,7 +68,7 @@ const Index = () => {
       {/* Cinematic Hero */}
       <section ref={heroRef} className="relative overflow-hidden min-h-screen flex items-center">
         <motion.div className="absolute inset-0" style={{ y: heroY, scale: heroScale }}>
-          <img src={heroPets} alt="Premium pet clinic" className="w-full h-full object-cover" width={1920} height={1080} />
+          <img src={heroPets} alt="Premium pet clinic" loading="lazy" className="w-full h-full object-cover" width={1920} height={1080} />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/85 via-foreground/60 to-foreground/20 dark:from-black/80 dark:via-black/50 dark:to-black/20" />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 via-transparent to-transparent" />

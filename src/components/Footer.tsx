@@ -29,7 +29,7 @@ const Footer = () => (
         <div className="md:col-span-1">
           <div className="flex items-center gap-3 mb-5">
             <div className="h-12 w-12 rounded-xl overflow-hidden shadow-lg">
-              <img src={logoImg} alt="faunaPetcare Logo" className="w-full h-full object-cover" />
+              <img src={logoImg} alt="faunaPetcare Logo" loading="lazy" width={48} height={48} className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
               <span className="font-heading text-lg font-bold">faunaPetcare</span>

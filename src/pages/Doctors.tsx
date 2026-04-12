@@ -28,7 +28,7 @@ const Doctors = () => (
         <motion.div key={d.name} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}>
           <Card className="card-elevated border-0 overflow-hidden premium-border">
             <div className="relative h-64 overflow-hidden">
-              <img src={d.img} alt={d.name} className="w-full h-full object-cover" />
+              <img src={d.img} alt={d.name} loading="lazy" width={640} height={640} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent" />
             </div>
             <CardContent className="p-6">

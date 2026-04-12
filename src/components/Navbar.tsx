@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between h-20 px-4">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="h-12 w-12 rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-300 shadow-lg">
-            <img src={logoImg} alt="faunaPetcare Logo" className="w-full h-full object-cover" />
+            <img src={logoImg} alt="faunaPetcare Logo" loading="lazy" width={48} height={48} className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col">
             <span className="font-heading text-lg font-bold text-foreground leading-tight tracking-tight">

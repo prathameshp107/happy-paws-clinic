@@ -16,7 +16,7 @@ const About = () => (
   <Layout>
     <section className="relative overflow-hidden min-h-[60vh] flex items-center">
       <div className="absolute inset-0">
-        <img src={heroPets} alt="Clinic" className="w-full h-full object-cover" />
+        <img src={heroPets} alt="Clinic" loading="lazy" width={1920} height={1080} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" />
       </div>
       <div className="relative container mx-auto px-4 py-20">
@@ -31,7 +31,7 @@ const About = () => (
 
     <section className="container mx-auto px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
       <motion.div initial={{ opacity: 0, x: -24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-        <img src={doctorImg} alt="Our Clinic" className="rounded-3xl w-full max-w-lg mx-auto" />
+        <img src={doctorImg} alt="Our Clinic" loading="lazy" width={800} height={1024} className="rounded-3xl w-full max-w-lg mx-auto" />
       </motion.div>
       <motion.div initial={{ opacity: 0, x: 24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
         <h2 className="font-heading text-3xl md:text-5xl font-bold mb-4">Care that feels premium</h2>
