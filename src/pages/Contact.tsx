@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 
 const contactInfo = [
   { icon: Phone, label: "Phone", value: "+91 99233 42709", href: "tel:+1234567890", gradient: "from-primary/15 to-primary/5" },
-  { icon: Mail, label: "Email", value: "hello@faunapetcare.com", href: "mailto:hello@faunapetcare.com", gradient: "from-accent/15 to-accent/5" },
+  { icon: Mail, label: "Email", value: "faunapetcareclinic@gmail.com", href: "mailto:faunapetcareclinic@gmail.com", gradient: "from-accent/15 to-accent/5" },
   { icon: MapPin, label: "Address", value: "Eraville Complex, shop no. 7, survey no. 182, beside Tupe corner, tupe patil road, behind Amanora mall, Hadapsar Pune Maharashtra India 411028", gradient: "from-primary/15 to-primary/5" },
   { icon: Clock, label: "Hours", value: "Mon–Fri: 9am–8pm | Sat: 9am–5pm", gradient: "from-accent/15 to-accent/5" },
 ];
