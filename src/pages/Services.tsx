@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
-import checkupImg from "@/assets/service-checkup.webp";
-import vaccinationImg from "@/assets/service-vaccination.webp";
-import groomingImg from "@/assets/service-grooming.webp";
+import checkupImg from "@/assets/Grooming.webp";
+import vaccinationImg from "@/assets/Vaccination.webp";
+import groomingImg from "@/assets/gallery-grooming.webp";
 import surgeryImg from "@/assets/service-surgery.webp";
 
 const services = [

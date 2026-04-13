@@ -168,7 +168,7 @@ const Appointment = () => {
       </section>
 
       {/* Trust highlights */}
-      <section className="container mx-auto px-4 pb-10 max-w-3xl">
+      <section className="container mx-auto px-4 pb-10 max-w-3xl mt-5">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
