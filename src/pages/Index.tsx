@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
-import heroPets from "@/assets/hero-premium.webp";
+import heroPets from "@/assets/hero-pets.webp";
 import doctorImg from "@/assets/docImage.webp";
 import checkupImg from "@/assets/healtcheckup.webp";
 import vaccinationImg from "@/assets/Vaccination.webp";
@@ -117,10 +117,10 @@ const Index = () => {
               transition={{ delay: 0.5 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button asChild size="lg" className="rounded-full text-base px-10 py-6 shadow-2xl shadow-primary/30 hover:shadow-primary/50 transition-shadow">
+              <Button asChild size="lg" className="rounded-full text-base px-10 py-6 shadow-2xl shadow-primary/30 hover:shadow-primary/50 transition-shadow bg-primary text-primary-foreground hover:bg-primary/90">
                 <Link to="/appointment">Book Appointment <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="rounded-full text-base px-10 py-6 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-md">
+              <Button asChild size="lg" variant="outline" className="rounded-full text-base px-10 py-6 border-2 border-white/50 text-lightblack hover:bg-white hover:text-primary backdrop-blur-md transition-all duration-300">
                 <a href="tel:+919923342709"><Phone className="mr-2 h-4 w-4" /> Call Now</a>
               </Button>
             </motion.div>
@@ -371,9 +371,17 @@ const Index = () => {
                 </div>
               ))}
             </div>
-            <Button asChild size="lg" variant="outline" className="rounded-full px-12 py-6 text-base border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-all duration-300">
-              <Link to="/appointment">Book Your Visit <ArrowRight className="ml-2 h-4 w-4" /></Link>
+            <Button 
+              asChild 
+              size="lg" 
+              variant="outline" 
+              className="rounded-full px-12 py-6 text-base border-2 border-white/50 text-neutral-800 hover:bg-white hover:text-primary transition-all duration-300"
+            >
+              <Link to="/appointment">
+                Book Your Visit <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
             </Button>
+
           </motion.div>
         </div>
       </section>
