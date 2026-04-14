@@ -1,6 +1,7 @@
 import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Card, CardContent } from "@/components/ui/card";
 
 const NotFound = () => {
@@ -12,6 +13,11 @@ const NotFound = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="404 — Page Not Found"
+        description="The page you're looking for doesn't exist. Return to faunaPetcare Clinic homepage."
+        canonical="/404"
+      />
       <section className="container mx-auto px-4 py-28">
         <Card className="max-w-lg mx-auto border-0 card-elevated premium-border overflow-hidden">
           <CardContent className="p-10 text-center">

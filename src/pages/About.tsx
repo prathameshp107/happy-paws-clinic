@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { HeartPulse, Shield, Award, Users, Stethoscope } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
+import SEO from "@/components/SEO";
 import heroPets from "@/assets/hero-premium.webp";
 import doctorImg from "@/assets/docImage.webp";
 
@@ -14,6 +15,11 @@ const highlights = [
 
 const About = () => (
   <Layout>
+    <SEO 
+      title="About Us — Our Story & Mission"
+      description="Learn about faunaPetcare Clinic's mission to provide premium veterinary care with compassion, expertise, and modern facilities in Hadapsar, Pune."
+      canonical="/about"
+    />
     <section className="relative overflow-hidden min-h-[60vh] flex items-center">
       <div className="absolute inset-0">
         <img src={heroPets} alt="Clinic" loading="lazy" width={1920} height={1080} className="w-full h-full object-cover" />

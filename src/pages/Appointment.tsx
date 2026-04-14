@@ -34,6 +34,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const highlights = [
   { icon: Shield, label: "Trusted by 15,000+ pets", sub: "Since 2008" },
@@ -64,6 +65,11 @@ const Appointment = () => {
   if (submitted) {
     return (
       <Layout>
+        <SEO 
+          title="Appointment Confirmed — Thank You"
+          description="Your appointment at faunaPetcare Clinic has been booked successfully. We'll contact you shortly to confirm."
+          canonical="/appointment"
+        />
         <div className="min-h-[80vh] flex items-center justify-center container mx-auto px-4 py-20">
           <motion.div
             initial={{ scale: 0.85, opacity: 0 }}
@@ -120,6 +126,11 @@ const Appointment = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Book Appointment — Schedule Your Visit"
+        description="Book an appointment at faunaPetcare Clinic for premium veterinary care. Schedule health checkups, vaccinations, surgery consultations, and more online."
+        canonical="/appointment"
+      />
       {/* Hero */}
       <section className="relative py-20 overflow-hidden">
         <div

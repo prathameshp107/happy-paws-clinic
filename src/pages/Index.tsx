@@ -5,6 +5,7 @@ import { Phone, Stethoscope, Syringe, Scissors, Clock, Star, ArrowRight, HeartPu
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import heroPets from "@/assets/hero-premium.webp";
 import doctorImg from "@/assets/docImage.webp";
 import checkupImg from "@/assets/healtcheckup.webp";
@@ -65,6 +66,11 @@ const Index = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Home — Premium Pet Healthcare"
+        description="Experience veterinary care reimagined at faunaPetcare Clinic. Premium treatments, compassionate experts, and a space your pet will love in Hadapsar, Pune."
+        canonical="/"
+      />
       {/* Cinematic Hero */}
       <section ref={heroRef} className="relative overflow-hidden min-h-screen flex items-center">
         <motion.div className="absolute inset-0" style={{ y: heroY, scale: heroScale }}>
@@ -115,7 +121,7 @@ const Index = () => {
                 <Link to="/appointment">Book Appointment <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-full text-base px-10 py-6 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-md">
-                <a href="tel:+1234567890"><Phone className="mr-2 h-4 w-4" /> Call Now</a>
+                <a href="tel:+919923342709"><Phone className="mr-2 h-4 w-4" /> Call Now</a>
               </Button>
             </motion.div>
           </div>
@@ -253,7 +259,7 @@ const Index = () => {
               Dr. Ruchali Ghatage
             </h2>
             <p className="text-muted-foreground mb-6 leading-relaxed text-lg">
-              With over 15 years of experience in veterinary medicine, Dr. Parker leads our team with unmatched passion and expertise. She specializes in small animal medicine, advanced diagnostics, and surgical innovation.
+              With over 10 years of experience in veterinary medicine, Dr. Parker leads our team with unmatched passion and expertise. She specializes in small animal medicine, advanced diagnostics, and surgical innovation.
             </p>
             <blockquote className="border-l-2 border-accent pl-6 my-8">
               <p className="italic text-foreground/80 text-lg leading-relaxed">

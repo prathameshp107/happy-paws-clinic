@@ -77,7 +77,7 @@ const Navbar = () => {
           </div>
           <div className="ml-2">
             <Button asChild size="sm" className="rounded-full px-6 shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-shadow">
-              <a href="tel:+1234567890">
+              <a href="tel:+919923342709">
                 <Phone className="h-3.5 w-3.5 mr-1.5" /> Call Now
               </a>
             </Button>
@@ -120,7 +120,7 @@ const Navbar = () => {
               <div className="flex items-center gap-2 mt-3">
                 <ThemeToggle />
                 <Button asChild size="sm" className="rounded-full flex-1 shadow-lg shadow-primary/20">
-                  <a href="tel:+1234567890">
+                  <a href="tel:+919923342709">
                     <Phone className="h-3.5 w-3.5 mr-1.5" /> Call Now
                   </a>
                 </Button>

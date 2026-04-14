@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock, Sparkles } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const contactInfo = [
-  { icon: Phone, label: "Phone", value: "+91 99233 42709", href: "tel:+1234567890", gradient: "from-primary/15 to-primary/5" },
+  { icon: Phone, label: "Phone", value: "+91 99233 42709", href: "tel:+919923342709", gradient: "from-primary/15 to-primary/5" },
   { icon: Mail, label: "Email", value: "faunapetcareclinic@gmail.com", href: "mailto:faunapetcareclinic@gmail.com", gradient: "from-accent/15 to-accent/5" },
-  { icon: MapPin, label: "Address", value: "Eraville Complex, shop no. 7, survey no. 182, beside Tupe corner, tupe patil road, behind Amanora mall, Hadapsar Pune Maharashtra India 411028", gradient: "from-primary/15 to-primary/5" },
-  { icon: Clock, label: "Hours", value: "Mon–Fri: 9am–8pm | Sat: 9am–5pm", gradient: "from-accent/15 to-accent/5" },
+  { icon: MapPin, label: "Address", value: "Shop No. 7, Eraville Complex, Survey No. 182, Tupe Patil Road, Behind Amanora Mall, Hadapsar, Pune – 411028", gradient: "from-primary/15 to-primary/5" },
+  { icon: Clock, label: "Hours", value: "Mon–Sat: 9:00 AM – 7:00 PM", gradient: "from-accent/15 to-accent/5" },
 ];
 
 const fadeUp = {
@@ -21,6 +22,11 @@ const fadeUp = {
 
 const Contact = () => (
   <Layout>
+    <SEO 
+      title="Contact Us — Get in Touch"
+      description="Contact faunaPetcare Clinic in Hadapsar, Pune. Call +91 99233 42709, email us, or visit our clinic for premium pet healthcare services."
+      canonical="/contact"
+    />
     <section className="relative py-24 md:py-32 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-secondary via-background to-secondary/50" />
       <div className="relative container mx-auto px-4 text-center">
@@ -67,7 +73,7 @@ const Contact = () => (
         <Card className="border-0 overflow-hidden premium-border hover-glow card-elevated">
           <iframe
             title="faunaPetcare Location"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d236.45107732372824!2d73.93744664168142!3d18.519082759912717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1775980478301!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4499.100844256314!2d73.93866918853621!3d18.516345627534015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c34ca3bce077%3A0x114f6648b9f367f!2sFauna%20Pet%20Care%20Clinic!5e0!3m2!1sen!2sin!4v1776140487828!5m2!1sen!2sin" 
             width="100%"
             height="500"
             style={{ border: 0 }}

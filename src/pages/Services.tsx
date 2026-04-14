@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import checkupImg from "@/assets/Grooming.webp";
 import vaccinationImg from "@/assets/Vaccination.webp";
 import groomingImg from "@/assets/gallery-grooming.webp";
@@ -51,6 +52,11 @@ const fadeUp = {
 
 const Services = () => (
   <Layout>
+    <SEO 
+      title="Our Services — Veterinary Care"
+      description="Explore our comprehensive veterinary services including health checkups, vaccinations, surgery, grooming, dental care, and emergency services at faunaPetcare Clinic."
+      canonical="/services"
+    />
     <section className="relative py-24 md:py-32 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-secondary via-background to-secondary/50" />
       <div className="relative container mx-auto px-4 text-center">

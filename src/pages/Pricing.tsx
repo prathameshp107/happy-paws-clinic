@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Check, PawPrint } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -30,6 +31,11 @@ const plans = [
 
 const Pricing = () => (
   <Layout>
+    <SEO 
+      title="Pricing — Affordable Pet Care Plans"
+      description="Transparent pricing for premium veterinary services. Explore our essential, premium, and wellness plans at faunaPetcare Clinic."
+      canonical="/pricing"
+    />
     <section className="bg-secondary/50 py-20">
       <div className="container mx-auto px-4 text-center">
         <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="font-heading text-4xl md:text-6xl font-bold">

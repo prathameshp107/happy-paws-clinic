@@ -55,12 +55,12 @@ const Footer = () => (
         {/* Brand */}
         <div className="sm:col-span-2 lg:col-span-1">
           <Link to="/" className="flex items-center gap-3 mb-5 group w-fit">
-            <div className="h-11 w-11 rounded-xl overflow-hidden shadow-md ring-1 ring-border group-hover:ring-primary/40 transition-all">
-              <img src={logoImg} alt="faunaPetcare Logo" loading="lazy" width={44} height={44} className="w-full h-full object-cover" />
+            <div className="h-20 w-20 rounded-xl overflow-hidden shadow-lg ring-2 ring-border group-hover:ring-primary/50 transition-all">
+              <img src={logoImg} alt="faunaPetcare Logo" loading="lazy" width={84} height={84} className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
-              <span className="font-heading text-base font-bold leading-tight">faunaPetcare</span>
-              <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Veterinary Clinic</span>
+              <span className="font-heading text-lg font-bold leading-tight">faunaPetcare</span>
+              <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Veterinary Clinic</span>
             </div>
           </Link>
 
@@ -79,14 +79,18 @@ const Footer = () => (
           {/* Socials */}
           <div className="flex gap-2.5">
             <a
-              href="#"
+              href="https://www.instagram.com/faunapetcareclinic"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
               className="h-9 w-9 rounded-xl border border-border bg-card flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-200"
             >
               <Instagram className="h-3.5 w-3.5" />
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/faunapetcareclinic"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
               className="h-9 w-9 rounded-xl border border-border bg-card flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-200"
             >

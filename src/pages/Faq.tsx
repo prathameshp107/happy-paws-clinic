@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import {
   Accordion,
   AccordionContent,
@@ -127,6 +128,41 @@ const faqCategories = [
 
 const Faq = () => (
   <Layout>
+    <SEO 
+      title="FAQ — Frequently Asked Questions"
+      description="Find answers to common questions about veterinary services, appointments, pricing, and pet care at faunaPetcare Clinic in Pune."
+      canonical="/faq"
+      schemaMarkup={{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What services do you offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We offer comprehensive veterinary services including health checkups, vaccinations, surgery, grooming, dental care, and emergency services."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book an appointment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can book an appointment online through our website or call us at +91 99233 42709."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are your clinic hours?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We are open Monday to Saturday from 9:00 AM to 7:00 PM."
+            }
+          }
+        ]
+      }}
+    />
     {/* Hero */}
     <section className="relative bg-secondary/50 py-20 overflow-hidden">
       <div

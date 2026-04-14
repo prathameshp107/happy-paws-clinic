@@ -12,13 +12,18 @@ import {
   Microscope,
   Syringe,
   PawPrint,
+  BadgeCheck,
 } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import doctor1 from "@/assets/docImage.webp";
+import logoImg from "@/assets/logo.webp";
 
 const doctor = {
   name: "Dr. Ruchali Ghatage",
   role: "Chief Veterinarian & Founder",
+  professionalTitle: "Veterinary Physician, Surgeon and Animal Health/Nutrition Consultant",
+  registrationNumber: "MSVC9548",
   img: doctor1,
   tagline: "Healing animals with science, empathy, and devotion.",
   rating: 4.9,
@@ -34,7 +39,7 @@ const doctor = {
     { label: "Preventive Healthcare", icon: CheckCircle2 },
     { label: "Diagnostic Imaging", icon: Stethoscope },
   ],
-  about: `Dr. Ruchali Ghatage is a distinguished veterinarian with over 15 years of dedicated service to animal health in Pune. Known for her exceptional surgical precision and compassionate approach, she has transformed the lives of thousands of pets and their families. 
+  about: `Dr. Ruchali Ghatage is a distinguished veterinarian with over 10 years of dedicated service to animal health in Pune. Known for her exceptional surgical precision and compassionate approach, she has transformed the lives of thousands of pets and their families. 
 
 Her expertise spans small animal surgery, diagnostic imaging, and managing complex multi-system diseases — making her one of the most trusted names in veterinary care across the region. She believes every pet deserves the same standard of care as any human patient.`,
   highlights: [
@@ -47,6 +52,23 @@ Her expertise spans small animal surgery, diagnostic imaging, and managing compl
 
 const Doctors = () => (
   <Layout>
+    <SEO 
+      title="Our Doctors — Expert Veterinarians"
+      description="Meet Dr. Ruchali Ghatage, our chief veterinarian with 15+ years of experience in surgery, internal medicine, and animal health care at faunaPetcare Clinic."
+      canonical="/doctors"
+      schemaMarkup={{
+        "@context": "https://schema.org",
+        "@type": "Physician",
+        "name": "Dr. Ruchali Ghatage",
+        "image": "https://faunapetcareclinic.com/src/assets/docImage.webp",
+        "url": "https://faunapetcareclinic.com/doctors",
+        "telephone": "+919923342709",
+        "medicalSpecialty": ["Veterinary Surgery", "Internal Medicine", "Animal Nutrition"],
+        "knowsAbout": ["Small Animal Surgery", "Diagnostic Imaging", "Preventive Healthcare"],
+        "alumniOf": "Maharashtra Animal & Fishery Sciences University",
+        "hasCredential": "MSVC9548"
+      }}
+    />
     {/* Hero Section */}
     <section className="relative bg-secondary/50 py-20 overflow-hidden">
       <div className="absolute inset-0 opacity-5 pointer-events-none"
@@ -97,6 +119,10 @@ const Doctors = () => (
                   className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent" />
+                {/* Clinic Logo */}
+                <div className="absolute top-4 left-4 h-14 w-14 rounded-xl overflow-hidden shadow-lg bg-white/90 backdrop-blur-sm p-1">
+                  <img src={logoImg} alt="faunaPetcare Clinic" className="w-full h-full object-cover" />
+                </div>
                 {/* Name overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
                   <h2 className="font-heading text-2xl font-bold leading-tight">{doctor.name}</h2>
@@ -137,6 +163,21 @@ const Doctors = () => (
               <div className="flex items-center gap-2.5 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary shrink-0" />
                 +91 98765 43210
+              </div>
+            </div>
+
+            {/* Registration & Professional Title */}
+            <div className="rounded-xl border border-primary/20 bg-primary/5 p-4 flex flex-col gap-3">
+              <div className="flex items-start gap-2.5">
+                <BadgeCheck className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-xs font-semibold text-primary uppercase tracking-wide">Veterinary Council Registration</p>
+                  <p className="text-sm font-bold text-foreground mt-0.5">Reg. No: {doctor.registrationNumber}</p>
+                </div>
+              </div>
+              <div className="border-t border-primary/20 pt-3">
+                <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-1">Professional Title</p>
+                <p className="text-sm text-foreground leading-relaxed">{doctor.professionalTitle}</p>
               </div>
             </div>
           </motion.div>

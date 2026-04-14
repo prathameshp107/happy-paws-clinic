@@ -7,7 +7,7 @@ const WhatsAppButton = () => {
 
   return (
     <motion.a
-      href="https://wa.me/1234567890?text=Hi%20faunaPetcare!%20I'd%20like%20to%20book%20an%20appointment."
+      href="https://wa.me/919923342709?text=Hi%20faunaPetcare!%20I'd%20like%20to%20book%20an%20appointment."
       target="_blank"
       rel="noopener noreferrer"
       style={{ opacity }}

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Card } from "@/components/ui/card";
 import g1 from "@/assets/service-checkup.webp";
 import g2 from "@/assets/service-vaccination.webp";
@@ -39,6 +40,11 @@ const images = [
 
 const Gallery = () => (
   <Layout>
+    <SEO 
+      title="Gallery — Our Clinic & Happy Pets"
+      description="Browse photos of our premium veterinary clinic, expert staff, and happy pets at faunaPetcare Clinic in Hadapsar, Pune."
+      canonical="/gallery"
+    />
     <section className="bg-secondary/50 py-20">
       <div className="container mx-auto px-4 text-center">
         <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="font-heading text-4xl md:text-6xl font-bold">
