@@ -5,11 +5,25 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 
 const contactInfo = [
-  { icon: Phone, label: "Phone", value: "+91 99233 42709", href: "tel:+919923342709", gradient: "from-primary/15 to-primary/5" },
+  {
+    icon: Phone,
+    label: "Phone",
+    content: (
+      <div className="flex flex-col gap-1 text-sm text-primary">
+        <a href="tel:+919923342709" className="hover:underline">+91 9923342709</a>
+        <a href="tel:+918793572269" className="hover:underline">+91 8793572269</a>
+      </div>
+    ),
+    gradient: "from-primary/15 to-primary/5"
+  },
   { icon: Mail, label: "Email", value: "faunapetcareclinic@gmail.com", href: "mailto:faunapetcareclinic@gmail.com", gradient: "from-accent/15 to-accent/5" },
   { icon: MapPin, label: "Address", value: "Shop No. 7, Eraville Complex, Survey No. 182, Tupe Patil Road, Behind Amanora Mall, Hadapsar, Pune – 411028", gradient: "from-primary/15 to-primary/5" },
-  { icon: Clock, label: "Hours", value: "Mon–Sat: 9:00 AM – 7:00 PM", gradient: "from-accent/15 to-accent/5" },
-];
+  {
+    icon: Clock,
+    label: "Hours",
+    value: "Mon – Sat: 10:00 AM – 2:30 PM &<br /> 5:00 PM – 9:30 PM<br /> Sunday: 6:00 PM – 8:00 PM",
+    gradient: "from-accent/15 to-accent/5"
+  },];
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -22,9 +36,9 @@ const fadeUp = {
 
 const Contact = () => (
   <Layout>
-    <SEO 
+    <SEO
       title="Contact Us — Get in Touch"
-      description="Contact faunaPetcare Clinic in Hadapsar, Pune. Call +91 99233 42709, email us, or visit our clinic for premium pet healthcare services."
+      description="Contact faunaPetcare Clinic in Hadapsar, Pune. Call +91 9923342709, email us, or visit our clinic for premium pet healthcare services."
       canonical="/contact"
     />
     <section className="relative py-24 md:py-32 overflow-hidden">
@@ -58,10 +72,15 @@ const Contact = () => (
                   <c.icon className="h-7 w-7 text-primary" />
                 </div>
                 <h3 className="font-heading font-semibold text-foreground mb-3 text-lg">{c.label}</h3>
-                {c.href ? (
+                {c.content ? (
+                  c.content
+                ) : c.href ? (
                   <a href={c.href} className="text-sm text-primary hover:underline">{c.value}</a>
                 ) : (
-                  <p className="text-sm text-muted-foreground leading-relaxed">{c.value}</p>
+                  <p
+                    className="text-sm text-muted-foreground leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: c.value }}
+                  />
                 )}
               </CardContent>
             </Card>
@@ -73,7 +92,7 @@ const Contact = () => (
         <Card className="border-0 overflow-hidden premium-border hover-glow card-elevated">
           <iframe
             title="faunaPetcare Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4499.100844256314!2d73.93866918853621!3d18.516345627534015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c34ca3bce077%3A0x114f6648b9f367f!2sFauna%20Pet%20Care%20Clinic!5e0!3m2!1sen!2sin!4v1776140487828!5m2!1sen!2sin" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4499.100844256314!2d73.93866918853621!3d18.516345627534015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c34ca3bce077%3A0x114f6648b9f367f!2sFauna%20Pet%20Care%20Clinic!5e0!3m2!1sen!2sin!4v1776140487828!5m2!1sen!2sin"
             width="100%"
             height="500"
             style={{ border: 0 }}

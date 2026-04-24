@@ -13,12 +13,12 @@ const defaultDescription = "faunaPetcare Clinic offers premium veterinary care w
 const defaultImage = "https://faunapetcareclinic.com/og-image.png";
 const siteUrl = "https://faunapetcareclinic.com";
 
-const SEO = ({ 
-  title, 
-  description = defaultDescription, 
-  canonical, 
+const SEO = ({
+  title,
+  description = defaultDescription,
+  canonical,
   image = defaultImage,
-  schemaMarkup 
+  schemaMarkup
 }: SEOProps) => {
   const fullTitle = title ? `${title} | faunaPetcare Clinic` : defaultTitle;
   const canonicalUrl = canonical ? `${siteUrl}${canonical}` : siteUrl;
@@ -55,7 +55,7 @@ const SEO = ({
     "priceRange": "₹₹",
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
+      "ratingValue": "4.8",
       "reviewCount": "312"
     },
     "sameAs": [

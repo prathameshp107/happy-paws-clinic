@@ -5,9 +5,9 @@ import logoImg from "@/assets/logo.webp";
 
 const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
-const navLinks = ["Home", "About", "Services", "Doctors", "Pricing", "FAQ", "Gallery", "Contact"];
+const navLinks = ["Home", "About", "Services", "Doctors", "FAQ", "Gallery", "Contact"];
 
-const services = ["Health Checkups", "Vaccination", "Surgery", "Grooming", "Dental Care", "Emergency Care"];
+const services = ["Health Checkups", "Vaccination", "Surgery", "Grooming",];
 
 const Footer = () => (
   <footer className="relative overflow-hidden border-t border-border">
@@ -69,13 +69,28 @@ const Footer = () => (
           </p>
 
           {/* Hours */}
-          <div className="flex items-center gap-2.5 text-xs text-muted-foreground mb-5">
-            <div className="h-6 w-6 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-              <Clock className="h-3 w-3 text-primary" />
+          <div className="flex flex-wrap items-start gap-4 text-xs text-muted-foreground mb-5">
+            <div className="flex items-start gap-2.5">
+              <div className="h-6 w-6 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                <Clock className="h-3 w-3 text-primary" />
+              </div>
+              <span>
+                Mon – Sat &nbsp;·&nbsp; <br />
+                10:00 AM – 2:30 PM <br />
+                5:00 PM – 9:30 PM
+              </span>
             </div>
-            <span>Mon – Sat &nbsp;·&nbsp; 9:00 AM – 7:00 PM</span>
-          </div>
 
+            <div className="flex items-start gap-2.5 w-full">
+              <div className="h-6 w-6 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                <Clock className="h-3 w-3 text-primary" />
+              </div>
+              <span>
+                Sunday &nbsp;·&nbsp; <br />
+                6:00 PM – 8:00 PM
+              </span>
+            </div>
+          </div>
           {/* Socials */}
           <div className="flex gap-2.5">
             <a
@@ -88,7 +103,7 @@ const Footer = () => (
               <Instagram className="h-3.5 w-3.5" />
             </a>
             <a
-              href="https://www.facebook.com/faunapetcareclinic"
+              href="https://www.facebook.com/share/1HDvedUJUJ/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -142,15 +157,19 @@ const Footer = () => (
             Get in Touch
           </h4>
           <div className="flex flex-col gap-4">
-            <a
-              href="tel:+919923342709"
-              className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors duration-200 group"
-            >
+            <div className="flex items-start gap-3 text-sm text-muted-foreground">
               <div className="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
                 <Phone className="h-3.5 w-3.5 text-primary" />
               </div>
-              +91 99233 42709
-            </a>
+              <div className="flex flex-col gap-1.5 mt-1.5">
+                <a href="tel:+919923342709" className="hover:text-primary transition-colors duration-200">
+                  +91 9923342709
+                </a>
+                <a href="tel:+918793572269" className="hover:text-primary transition-colors duration-200">
+                  +91 8793572269
+                </a>
+              </div>
+            </div>
             <a
               href="mailto:faunapetcareclinic@gmail.com"
               className="flex items-start gap-3 text-sm text-muted-foreground hover:text-primary transition-colors duration-200 group"

@@ -15,8 +15,13 @@ const services = [
     title: "Health Checkups",
     icon: Stethoscope,
     img: checkupImg,
-    desc: "Comprehensive wellness exams including physical assessment, blood work, and diagnostic screening. We catch health issues early so your pet lives a longer, happier life.",
-    features: ["Full physical examination", "Blood & urine tests", "Weight & nutrition counseling", "Senior pet wellness"],
+    desc: "Because every life deserves mindful care. Our check-ups focus on noticing the small signs that matter—combining clinical attention with a gentle approach to keep your pet healthy, active, and thriving.",
+    features: [
+      "Head-to-tail physical examination with careful observation",
+      "Blood and urine sample collection, coordinated with certified labs for accurate insights",
+      "Practical guidance on weight, feeding, and nutrition tailored to your pet",
+      "Preventive care advice and follow-up recommendations"
+    ],
   },
   {
     title: "Vaccination",
@@ -29,15 +34,25 @@ const services = [
     title: "Surgery",
     icon: HeartPulse,
     img: surgeryImg,
-    desc: "State-of-the-art surgical suite equipped with advanced monitoring. From routine spay/neuter to complex procedures, your pet is in expert hands.",
-    features: ["Spay & neuter", "Soft tissue surgery", "Orthopedic procedures", "Post-op recovery care"],
+    desc: "Surgical care here is guided by focus, responsibility, and a calm, controlled approach. Each procedure is planned with careful evaluation, carried out with steady precision, and followed through with attentive recovery support. By keeping the process simple, transparent, and closely monitored, we aim to ensure safety, comfort, and the best possible outcome for every pet.",
+    features: [
+      "Pre-surgical evaluation and case assessment",
+      "Minor and routine surgical procedures",
+      "Careful monitoring during procedures",
+      "Post-surgery care and recovery guidance"
+    ],
   },
   {
     title: "Grooming",
     icon: Scissors,
     img: groomingImg,
-    desc: "Professional grooming services to keep your pet clean, comfortable, and looking their best. We use gentle, pet-safe products.",
-    features: ["Bath & blow-dry", "Haircut & styling", "Nail trimming & ear cleaning", "De-shedding treatment"],
+    desc: "More than just appearance, grooming supports your pet’s comfort, hygiene, and skin health. Using gentle techniques and safe, medicated products when needed, we ensure a calm and caring experience that leaves your pet clean, refreshed, and at ease.",
+    features: [
+      "Nail care and ear hygiene",
+      "Medicated baths",
+      "Basic coat cleaning and maintenance",
+      "Gentle handling for a stress-free experience"
+    ],
   },
 ];
 
@@ -52,7 +67,7 @@ const fadeUp = {
 
 const Services = () => (
   <Layout>
-    <SEO 
+    <SEO
       title="Our Services — Veterinary Care"
       description="Explore our comprehensive veterinary services including health checkups, vaccinations, surgery, grooming, dental care, and emergency services at faunaPetcare Clinic."
       canonical="/services"

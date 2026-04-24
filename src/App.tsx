@@ -11,7 +11,6 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Doctors from "./pages/Doctors";
-import Pricing from "./pages/Pricing";
 import Faq from "./pages/Faq";
 import Gallery from "./pages/Gallery";
 
@@ -29,7 +28,6 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/doctors" element={<Doctors />} />
-            <Route path="/pricing" element={<Pricing />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/appointment" element={<Appointment />} />

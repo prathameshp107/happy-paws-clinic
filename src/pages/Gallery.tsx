@@ -16,8 +16,12 @@ import {
   ChevronRight,
   ZoomIn,
   Grid3X3,
-  Layers
+  Layers,
+  Box,
+  Monitor
 } from "lucide-react"
+
+import InfiniteGallery from "@/components/ui/3d-gallery-photography"
 
 // Existing images
 import g1 from "@/assets/service-checkup.webp"
@@ -55,6 +59,18 @@ import checkup15 from "@/assets/Checkup-Images-Doctor (15).webp"
 import checkup16 from "@/assets/Checkup-Images-Doctor (16).webp"
 import checkup17 from "@/assets/Checkup-Images-Doctor (17).webp"
 import checkup18 from "@/assets/Checkup-Images-Doctor (18).webp"
+
+// New Doctor Images
+import newdoc1 from "@/assets/newdoctor-images (1).jpg"
+import newdoc2 from "@/assets/newdoctor-images (2).jpg"
+import newdoc3 from "@/assets/newdoctor-images (3).jpg"
+import newdoc4 from "@/assets/newdoctor-images (4).jpg"
+import newdoc5 from "@/assets/newdoctor-images (5).jpg"
+import newdoc6 from "@/assets/newdoctor-images (6).jpg"
+import newdoc7 from "@/assets/newdoctor-images (7).jpg"
+import newdoc8 from "@/assets/newdoctor-images (8).jpg"
+import newdoc9 from "@/assets/checkupimages (1).jpg"
+import newdoc10 from "@/assets/checkupimages (2).jpg"
 
 // Categories with icons
 const categories = [
@@ -110,6 +126,16 @@ const allImages = [
   { src: doctorPremium, label: "Expert Doctors", category: "team" },
   { src: doctor, label: "Veterinary Care", category: "team" },
   { src: doctorImage, label: "Compassionate Care", category: "team" },
+  { src: newdoc1, label: "Veterinary Specialist", category: "team" },
+  { src: newdoc2, label: "Veterinary Specialist", category: "team" },
+  { src: newdoc3, label: "Veterinary Specialist", category: "team" },
+  { src: newdoc4, label: "Veterinary Specialist", category: "team" },
+  { src: newdoc5, label: "Veterinary Specialist", category: "team" },
+  { src: newdoc6, label: "Veterinary Specialist", category: "team" },
+  { src: newdoc7, label: "Veterinary Specialist", category: "team" },
+  { src: newdoc8, label: "Veterinary Specialist", category: "team" },
+  { src: newdoc9, label: "Veterinary Specialist", category: "team" },
+  { src: newdoc10, label: "Veterinary Specialist", category: "team" },
 ]
 
 // Lightbox Component
@@ -232,15 +258,15 @@ function GalleryCard({
           </div>
           
           {/* Category badge */}
-          <div className="absolute top-3 left-3">
+          {/* <div className="absolute top-3 left-3">
             <span className="px-3 py-1 text-xs font-medium bg-primary/90 text-white rounded-full capitalize">
               {image.category}
             </span>
-          </div>
+          </div> */}
         </div>
         
         {/* Card content */}
-        <div className="p-4 bg-gradient-to-br from-card to-card/50">
+        {/* <div className="p-4 bg-gradient-to-br from-card to-card/50">
           <h3 className="font-heading font-semibold text-foreground group-hover:text-primary transition-colors">
             {image.label}
           </h3>
@@ -248,7 +274,7 @@ function GalleryCard({
             <Layers className="w-3 h-3" />
             Click to enlarge
           </p>
-        </div>
+        </div> */}
         
         {/* Hover border effect */}
         <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary/30 rounded-lg transition-colors duration-300 pointer-events-none" />
@@ -298,6 +324,8 @@ const Gallery = () => {
       setLightboxImage(filteredImages[newIndex])
     }
   }
+
+  const [viewMode, setViewMode] = useState<"grid" | "3d">("grid")
 
   // Keyboard navigation
   const handleKeyDown = (e: KeyboardEvent) => {
@@ -392,12 +420,58 @@ const Gallery = () => {
                 </button>
               )
             })}
+            
+            <div className="w-px h-8 bg-border mx-2 hidden sm:block" />
+            
+            <button
+              onClick={() => setViewMode(viewMode === "grid" ? "3d" : "grid")}
+              className={`
+                flex items-center gap-2 px-5 py-2.5 rounded-full font-medium transition-all duration-300
+                ${viewMode === "3d"
+                  ? "bg-primary text-primary-foreground shadow-lg shadow-primary/25"
+                  : "bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground"
+                }
+              `}
+            >
+              {viewMode === "3d" ? <Grid3X3 className="w-4 h-4" /> : <Monitor className="w-4 h-4" />}
+              {viewMode === "3d" ? "Grid View" : "3D Experience"}
+            </button>
           </div>
         </div>
       </section>
 
-      {/* Gallery Grid */}
-      <section className="container mx-auto px-4 py-16">
+      {viewMode === "3d" ? (
+        <section className="relative h-[80vh] w-full bg-black overflow-hidden mt-8">
+          <InfiniteGallery
+            images={allImages.map(img => ({ src: img.src, alt: img.label }))}
+            speed={1.2}
+            zSpacing={3}
+            visibleCount={12}
+            className="h-full w-full"
+          />
+          <div className="absolute inset-0 pointer-events-none flex items-center justify-center text-center px-4 mix-blend-exclusion text-white">
+            <h2 className="font-heading text-4xl md:text-7xl font-bold tracking-tight">
+              Fauna <span className="italic font-light">Pet Care</span>
+            </h2>
+          </div>
+          
+          <div className="absolute bottom-10 left-0 right-0 pointer-events-none text-center font-mono uppercase text-[10px] md:text-[11px] font-semibold text-white/60">
+            <p>Use mouse wheel, arrow keys, or touch to navigate</p>
+            <p className="opacity-40">Auto-play resumes after 3 seconds of inactivity</p>
+          </div>
+          
+          {/* Close/Back button for 3D mode */}
+          <button
+            onClick={() => setViewMode("grid")}
+            className="absolute top-4 right-4 z-20 px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md transition-all text-sm font-medium border border-white/10"
+          >
+            Exit 3D View
+          </button>
+        </section>
+      ) : (
+        <>
+          {/* Gallery Grid */}
+          <section className="container mx-auto px-4 py-16">
         <motion.div 
           layout
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
@@ -426,6 +500,8 @@ const Gallery = () => {
           </motion.div>
         )}
       </section>
+      </>
+      )}
 
       {/* Lightbox */}
       <AnimatePresence>

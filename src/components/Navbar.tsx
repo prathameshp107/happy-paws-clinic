@@ -11,7 +11,6 @@ const navLinks = [
   { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
   { to: "/doctors", label: "Doctors" },
-  { to: "/pricing", label: "Pricing" },
   { to: "/faq", label: "FAQ" },
   { to: "/gallery", label: "Gallery" },
   { to: "/appointment", label: "Book Appointment" },

@@ -13,6 +13,7 @@ import {
   Syringe,
   PawPrint,
   BadgeCheck,
+  Users,
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
@@ -20,46 +21,46 @@ import doctor1 from "@/assets/docImage.webp";
 import logoImg from "@/assets/logo.webp";
 
 const doctor = {
-  name: "Dr. Ruchali Ghatage",
+  name: "Dr. Ruchali Ghatge",
   role: "Chief Veterinarian & Founder",
   professionalTitle: "Veterinary Physician, Surgeon and Animal Health/Nutrition Consultant",
   registrationNumber: "MSVC9548",
   img: doctor1,
-  tagline: "Healing animals with science, empathy, and devotion.",
-  rating: 4.9,
+  tagline: "His Creation to Our Care.",
+  rating: 4.8,
   reviews: 312,
   experience: "15+ Years",
   location: "Pimpri-Chinchwad, Pune",
-  qualifications: ["BVSc & AH (MAFSU)", "MVSc – Surgery & Radiology", "PGDCR – Clinical Research"],
+  qualifications: ["BVSc & AH (MAFSU)", "MVSc – Surgery & Radiology"],
   specializations: [
     { label: "Soft Tissue Surgery", icon: Syringe },
     { label: "Internal Medicine", icon: Microscope },
     { label: "Exotic Animal Care", icon: PawPrint },
-    { label: "Critical & Emergency Care", icon: HeartPulse },
+    { label: "General Health Consultations", icon: HeartPulse },
     { label: "Preventive Healthcare", icon: CheckCircle2 },
-    { label: "Diagnostic Imaging", icon: Stethoscope },
+    { label: "Nutrition & Wellness Guidance", icon: Stethoscope },
+    { label: "Hostelling for Cats and Small Dogs", icon: Users },
   ],
-  about: `Dr. Ruchali Ghatage is a distinguished veterinarian with over 10 years of dedicated service to animal health in Pune. Known for her exceptional surgical precision and compassionate approach, she has transformed the lives of thousands of pets and their families. 
+  about: `Dr. Ruchali Ghatge is a dedicated veterinarian with over 9 years of experience in animal healthcare. Her practice is defined by a calm, focused approach and a deep respect for every life she treats. Working across small and large animals, she brings together clinical knowledge and steady hands to manage a wide range of medical and surgical cases.
 
-Her expertise spans small animal surgery, diagnostic imaging, and managing complex multi-system diseases — making her one of the most trusted names in veterinary care across the region. She believes every pet deserves the same standard of care as any human patient.`,
+Her expertise includes clinical diagnosis, surgical care, and the management of complex conditions, along with thoughtful guidance on preventive health, nutrition, and overall well-being for pets. Every aspect of care is delivered with precision, compassion, and a deep commitment to improving the quality of life of every animal she treats.`,
   highlights: [
-    "Performed 2,500+ successful surgeries",
-    "Published in 3 national veterinary journals",
-    "Guest faculty at Maharashtra Animal Sciences University",
+    "Performed 500+ successful surgeries",
+    "Worked with multiple NGOs for animal care",
     "Runs free monthly wellness camps for strays",
   ],
 };
 
 const Doctors = () => (
   <Layout>
-    <SEO 
+    <SEO
       title="Our Doctors — Expert Veterinarians"
-      description="Meet Dr. Ruchali Ghatage, our chief veterinarian with 15+ years of experience in surgery, internal medicine, and animal health care at faunaPetcare Clinic."
+      description="Meet Dr. Ruchali Ghatge, our chief veterinarian with 15+ years of experience in surgery, internal medicine, and animal health care at faunaPetcare Clinic."
       canonical="/doctors"
       schemaMarkup={{
         "@context": "https://schema.org",
         "@type": "Physician",
-        "name": "Dr. Ruchali Ghatage",
+        "name": "Dr. Ruchali Ghatge",
         "image": "https://faunapetcareclinic.com/src/assets/docImage.webp",
         "url": "https://faunapetcareclinic.com/doctors",
         "telephone": "+919923342709",
